@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* style login and Register*/
+.Container{
+    background-color: rgb(29, 200, 238);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Containerform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 60px;
+    border-radius:10px ;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+    
+}
+.form input{
+     padding: 7px;
+     width: 100%;
+     border: none;
+   border-bottom: 1px solid rgb(160, 208, 250);
+   outline: none;
+}
+.form button{
+    padding: 7px;
+    width: 100%;
+    background-color: rgba(16, 171, 255, 0.944);
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+.form button:hover{
+    background-color: rgba(0, 164, 252, 0.944);
+ 
+}
+
+.Containerform p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
