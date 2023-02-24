@@ -58,3 +58,209 @@
   font-size: 15px;
 }
 
+/* style sidebar and chat*/
+
+
+.home{
+    background-color: rgba(29, 200, 238, 0.389);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container{
+         width: 65%;
+         height: 80%;
+         border: 1px solid black;
+         border-radius: 10px;
+         display: flex;
+         overflow: hidden;
+}
+.Sidebar{
+    flex: 1;
+    border-right: 1px solid black;
+    background-color: white;
+ 
+}
+
+
+
+/*navbar */
+
+
+.navbar{
+display: flex;
+background-color: rgb(0, 174, 255);
+justify-content: space-between;
+align-items: center;
+height: 50px;
+padding: 10px;
+color: white;
+}
+
+.logo{
+    font-weight: bolder;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    gap: 5px;
+}
+
+.user img{
+    background-color: rgb(156, 98, 98);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user button  {
+  
+    width: 40px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size:25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.user button:hover {
+  
+
+    font-size:27px;
+  
+}
+
+
+/*search*/
+.search{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.152);
+}
+
+.search-form{
+      padding: 15px;
+
+}
+.search-form input{
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: rgb(7, 7, 7);
+    width: 50%;
+  
+    
+}
+
+.user-chat{
+
+ padding: 8px;
+ display: flex;
+ align-items: center;
+ justify-content:start;
+ gap: 20px;
+}
+.user-chat:hover{
+    background-color: rgba(0, 174, 255, 0.068);
+   }
+   
+.user-chat img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+
+}
+.user-chat span{
+    font-size: 18px;font-weight: 500;
+}
+.user-chat p{
+    font-size: 14px; color: lightgray;
+}
+/*chat*/
+.Chat{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.Chat .chta-info{
+    padding: 10px;
+    background-color: rgba(0, 166, 255, 0.714);
+    color: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.Chat .chta-info span{
+   font-size: 18px;
+   font-weight: 500;
+}
+
+/*messges*/
+.messges{
+    padding: 10px;
+    background-color: rgb(211, 224, 242);
+  flex: 7;
+
+}
+
+.input{
+    height: 40px;
+    padding: 10px;
+    background-color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.input input{
+   width: 50%
+   ;
+   height: 100%;
+outline: none;
+border: none;
+  
+}
+.input .send{
+ 
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 4px;
+}
+.input .send label {
+ text-align: center;
+   width: 100px;
+}
+.input .send label svg {
+   font-size: 30px;
+   cursor: pointer;
+   }
+
+   .input .send button {
+  width: autu;
+  background-color: transparent;
+  border: none;
+
+    }
+
+    .input .send button svg {
+     font-size: 30px;
+        
+          }
+          .input .send button svg:hover {
+            color: rgb(0, 136, 255);
+               
+                 }
