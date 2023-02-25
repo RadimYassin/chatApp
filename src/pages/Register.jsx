@@ -1,19 +1,43 @@
 import React, { useState } from 'react'
-import {  createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../firebase.js'
-import {FcCameraAddon} from "react-icons/fc";
+import {  createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth,storage } from '../firebase.js'
+import {FcCameraAddon} from "react-icons/fc"; 
+import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { doc, setDoc } from "firebase/firestore"; 
 const Register = () => {
   const [error,setError]=useState(false)
 
   const handlsubmit=async(e)=>{
         e.preventDefault()
-        const dispalyname=e.target[0].value
+        const displayName=e.target[0].value
         const email=e.target[1].value
         const password=e.target[2].value
         const avatar=e.target[3].files[0]
 try {
   const res=await createUserWithEmailAndPassword(auth, email, password)
-   console.log(res);
+ 
+
+
+  const storageRef = ref(storage, displayName);
+  
+  const uploadTask = uploadBytesResumable(storageRef, file);
+  
+
+  uploadTask.on('state_changed', 
+    (error) => {
+     setError(true)
+    }, 
+    () => {
+     
+      getDownloadURL(uploadTask.snapshot.ref).then( async(downloadURL) => {
+         await updateProfile(res.user{
+          displayName,
+          photoURL:downloadURL
+         })
+      });
+    }
+  );
+  
 } catch (error) {
      setError(true)
 }
