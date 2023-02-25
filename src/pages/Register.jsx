@@ -29,7 +29,7 @@ try {
                       <input type="text" placeholder='email' />
                       <input type="password"  placeholder='password' />
                       <input style={{display:"none"}} type="file" id='file' />
-                      <label htmlFor="file"><FcCameraAddon/></label>
+                      <label htmlFor="file"><FcCameraAddon/><span>chose your avatar</span></label>
                       <button>sign up</button>
                       {error && <span>something went wrong</span>}
                   </form>
