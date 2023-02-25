@@ -13,6 +13,7 @@
 }
 
 .Containerform{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,7 @@
 
 }
 .form{
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +54,22 @@
     background-color: rgba(0, 164, 252, 0.944);
  
 }
+.form label{
+  
+    padding: 5px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ 
+}
+.form label svg{
+  
+  font-size: 30px;
+ 
+ 
+}
+
 
 .Containerform p{
   margin-top: 10px;
